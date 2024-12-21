@@ -9,8 +9,8 @@
     <p>
       Een vertrouwenspersoon biedt een luisterend oor en advies aan clubleden die te maken hebben met ongewenst gedrag, zoals pesten, intimidatie of discriminatie binnen clubverband. Ze helpen bij het verhelderen van de situatie en bieden ondersteuning bij het vinden van oplossingen. Daarnaast dragen ze bij aan het creeren van een veilige en respectvolle werkomgeving door bewustwording en preventie te bevorderen. Deze vertrouwenspersonen zijn onafhankelijk van de club om belangenvermenging te voorkomen. Hieronder een overzicht van de bevoegde vertrouwenspersonen per club.
     </p>
-    <div class="flex flex-wrap gap-16 justify-between mt-20 max-w-3xl m-auto">
-      <div class="w-fit flex flex-col gap-2 items-center" v-for="info of contactInfo">
+    <div class="flex flex-wrap gap-10 justify-center md:justify-between mt-20 max-w-[42.5rem] m-auto relative">
+      <div class="w-fit flex flex-col gap-2 items-center relative z-10 md:text-white" v-for="info of contactInfo">
         <img :src="`/src/assets/praesidium/${info.img}`" class="h-80 w-80 rounded-full object-cover" />
         <div class="flex flex-col justify-center w-fit text-center">
           <div class="font-bold text-2xl">{{ info.club }}</div>
@@ -19,6 +19,7 @@
           <div><a class="underline underline-offset-4" :href="`mailto:${info.mail}`">Mail</a></div>
         </div>
       </div>
+      <div class="hidden md:block absolute bg-blue-950 h-4/5 w-[120%] -left-[10%] -bottom-10 skew-y-6 rounded-md" />
     </div>
   </section-component>
   <section-component bg-color="bg-yellow-50" text-color="text-blue-950" title="Jaarlijkse evenementen" align-items="items-start" big-title>

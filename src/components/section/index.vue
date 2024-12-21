@@ -1,6 +1,6 @@
 <template>
   <section :class="`flex justify-center py-16 px-4 ${bgColor} ${textColor}`">
-    <div :class="`flex flex-col ${alignItems} gap-6 max-w-5xl w-full`">
+    <div :class="`flex flex-col ${alignItems} gap-6 ${noMaxWidth ? '' : 'max-w-5xl'} w-full`">
       <h2 class="text-4xl font-extrabold w-fit">{{ title }}</h2>
       <div class="text-justify w-full relative">
         <slot />
@@ -10,11 +10,12 @@
 </template>
 
 <script lang="ts" setup>
-defineProps<{
+const props = defineProps<{
   bgColor: string;
   textColor: string;
   title: string;
   bigTitle?: boolean;
+  noMaxWidth?: boolean;
   alignItems: 'items-start' | 'items-end';
 }>()
 </script>

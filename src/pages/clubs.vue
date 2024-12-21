@@ -3,8 +3,8 @@
     <section-component title="Clubs" bg-color="bg-white" text-color="text-blue-950" align-items="items-start" big-title>
       <div class="flex flex-col gap-8 min-h-40">
         <div class="flex flex-col md:flex-row gap-4 bg-yellow-50 shadow-md p-4" v-for="club of clubs">
-          <img :src="`/src/assets/clubs/${club.logo}`" class="h-40 md:h-auto md:w-60" />
-          <div class="flex flex-col align-top">
+          <img :src="`/src/assets/clubs/${club.logo}`" class="max-h-60 h-full md:max-h-none md:h-auto md:w-60 object-contain" />
+          <div class="flex flex-col align-top gap-2">
             <h2 class="font-extrabold text-xl">{{ club.name }}</h2>
             <p class="flex-1">{{ club.description }}</p>
             <div class="inline-flex ml-auto">
