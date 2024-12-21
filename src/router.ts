@@ -1,5 +1,6 @@
 import { createMemoryHistory, createRouter, RouteRecordRaw } from 'vue-router'
 import Home from './pages/home.vue'
+import Clubs from './pages/clubs.vue'
 
 
 const routes: RouteRecordRaw[] = [
@@ -16,7 +17,7 @@ const routes: RouteRecordRaw[] = [
   { 
     name: 'clubs',
     path: '/clubs',
-    component: Home,
+    component: Clubs,
   },
   { 
     name: 'contact',

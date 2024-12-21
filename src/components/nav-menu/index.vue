@@ -3,13 +3,13 @@
     <!-- Desktop Menu -->
     <ul class="hidden md:flex justify-center items-center gap-4">
       <li v-for="mi in menuItems.slice(0, 2)" :key="mi.url">
-        <router-link class="desktop" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
+        <router-link class="desktop py-4" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
       </li>
       <router-link class="desktop no-after m-auto" to="/">
         <img class="h-20 w-20 mx-4" src="/src/assets/sk-logo.svg" />
       </router-link>
       <li v-for="mi in menuItems.slice(2, 4)" :key="mi.url">
-        <router-link class="desktop" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
+        <router-link class="desktop py-4" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
       </li>
     </ul>
 
@@ -72,7 +72,7 @@ const isMobileMenuOpen = ref(false);
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: -1rem;
+  bottom: 0;
   background-color: rgb(23, 37, 84);
 }
 .desktop.no-after.router-link-active::after {

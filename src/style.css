@@ -33,4 +33,5 @@ h1 {
 * {
   padding: 0;
   margin: 0;
+  @apply transition-all duration-300;
 }
