@@ -1,14 +1,16 @@
 <template>
-  <div class="page">
+  <div class="page min-h-screen flex flex-col">
     <nav-menu />
-    <main>
+    <div id="content" class="mt-20 md:mt-0 flex-1">
       <router-view />
-    </main>
+    </div>
+    <footer-component />
   </div>
 </template>
 
 <script setup lang="ts">
-import NavMenu from './components/nav-menu/index.vue'
+import NavMenu from './components/nav-menu/index.vue';
+import FooterComponent from './components/footer/index.vue';
 </script>
 
 <style scoped>
