@@ -1,6 +1,9 @@
 import { createMemoryHistory, createRouter, RouteRecordRaw } from 'vue-router'
 import Home from './pages/home.vue'
 import Clubs from './pages/clubs.vue'
+import Praesidium from './pages/praesidium.vue'
+import Contact from './pages/contact.vue'
+import Sponsors from './pages/sponsors.vue'
 
 
 const routes: RouteRecordRaw[] = [
@@ -12,7 +15,7 @@ const routes: RouteRecordRaw[] = [
   { 
     name: 'praesidium',
     path: '/praesidium',
-    component: Home,
+    component: Praesidium,
   },
   { 
     name: 'clubs',
@@ -22,12 +25,12 @@ const routes: RouteRecordRaw[] = [
   { 
     name: 'contact',
     path: '/contact',
-    component: Home,
+    component: Contact,
   },
   { 
     name: 'sponsors',
     path: '/sponsors',
-    component: Home,
+    component: Sponsors,
   },
 ]
 
