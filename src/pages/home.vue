@@ -11,7 +11,7 @@
     </p>
     <div class="flex flex-wrap gap-10 justify-center md:justify-between mt-20 max-w-[42.5rem] m-auto relative">
       <div class="w-fit flex flex-col gap-2 items-center relative z-10 md:text-white" v-for="info of contactInfo">
-        <img :src="`/src/assets/praesidium/${info.img}`" class="h-80 w-80 rounded-full object-cover" />
+        <img :src="`/src/assets/${info.img}`" class="h-80 w-80 rounded-full object-cover" />
         <div class="flex flex-col justify-center w-fit text-center">
           <div class="font-bold text-2xl">{{ info.club }}</div>
           <div>{{ info.name }}</div>
