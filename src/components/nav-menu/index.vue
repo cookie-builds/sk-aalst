@@ -6,7 +6,7 @@
         <router-link class="desktop py-4" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
       </li>
       <router-link class="desktop no-after m-auto" to="/">
-        <img class="h-20 w-20 mx-4" src="/src/assets/sk-logo.svg" />
+        <img class="h-20 w-20 mx-4" src="/assets/sk-logo.svg" />
       </router-link>
       <li v-for="mi in menuItems.slice(2, 4)" :key="mi.url">
         <router-link class="desktop py-4" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
@@ -16,7 +16,7 @@
     <!-- Mobile Menu -->
     <div class="flex items-center justify-between md:hidden w-full px-4">
       <router-link to="">
-        <img src="/src/assets/sk-logo.svg" class="h-16 w-16" />
+        <img src="/assets/sk-logo.svg" class="h-16 w-16" />
       </router-link>
       <Bars3Icon class="h-8 w-8 hover:cursor-pointer" @click="isMobileMenuOpen = !isMobileMenuOpen"/>
     </div>

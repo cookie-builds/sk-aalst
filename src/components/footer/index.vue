@@ -2,7 +2,7 @@
   <footer class="flex flex-row justify-center py-16 px-4 bg-blue-950 text-white shadow-lg">
     <div class="flex flex-row justify-between items-start max-w-5xl w-full gap-16">
       <router-link to="/">
-        <img src="/src/assets/sk-logo.svg" class="h-32 w-32" />
+        <img src="/assets/sk-logo.svg" class="h-32 w-32" />
       </router-link>
       <div class="flex flex-col gap-4">
         <h3 class="font-extrabold text-xl">Links</h3>
