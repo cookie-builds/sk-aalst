@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter, RouteRecordRaw } from 'vue-router'
+import { createWebHistory, createRouter, RouteRecordRaw } from 'vue-router'
 import Home from './pages/home.vue'
 import Clubs from './pages/clubs.vue'
 import Praesidium from './pages/praesidium.vue'
@@ -35,7 +35,7 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 
