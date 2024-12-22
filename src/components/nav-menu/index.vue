@@ -40,7 +40,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { Bars3Icon } from '@heroicons/vue/16/solid';
 
@@ -58,6 +58,14 @@ const active = computed(() => {
 });
 
 const isMobileMenuOpen = ref(false);
+
+watch(
+  () => route.path,
+  () => {
+    isMobileMenuOpen.value = false
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }
+);
 </script>
 
 <style scoped>

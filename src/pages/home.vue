@@ -2,7 +2,7 @@
   <div class="flex w-full max-h-[50vh]">
     <img class="w-full object-cover object-top" src="/src/assets/banner.jpg"  />
   </div>
-  <section-component bg-color="bg-yellow-50" text-color="text-blue-950" title="SK Aalst" align-items="items-start" big-title>
+  <section-component bg-color="bg-yellow-50" text-color="text-blue-950" title="SK Aalst" align-items="items-start" big-title title-above>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus volutpat tincidunt. Pellentesque consequat quis nibh a dictum. Phasellus aliquet scelerisque lacus, eget aliquet sem malesuada nec. Duis at orci id ipsum fringilla malesuada. Cras et porta dui, nec maximus orci. Donec lorem turpis, blandit et sem non, vestibulum accumsan erat. In vitae tempor ante, sit amet convallis sapien. Nunc scelerisque finibus mi, id egestas velit sollicitudin at. Nam bibendum justo ut aliquet finibus. Integer vehicula dui non fermentum facilisis. Quisque diam tellus, aliquet at dui sit amet, sollicitudin fermentum eros.
   </section-component>
   <section-component bg-color="bg-white" text-color="text-blue-950" title="Vertrouwenspersoon voor elke club" align-items="items-start">
@@ -19,10 +19,10 @@
           <div><a class="underline underline-offset-4" :href="`mailto:${info.mail}`">Mail</a></div>
         </div>
       </div>
-      <div class="hidden md:block absolute bg-blue-950 h-4/5 w-[120%] -left-[10%] -bottom-10 skew-y-6 rounded-md" />
+      <div class="hidden lg:block absolute bg-blue-950 h-4/5 w-[150%] -left-[25%] -bottom-10 skew-y-6 rounded-md" />
     </div>
   </section-component>
-  <section-component bg-color="bg-yellow-50" text-color="text-blue-950" title="Jaarlijkse evenementen" align-items="items-start" big-title>
+  <section-component bg-color="bg-yellow-50" text-color="text-blue-950" title="Jaarlijkse evenementen" align-items="items-start">
     <p><b>SK-voetbal</b>: </p>
     <p><b>Cantorconvent</b>: </p>
     <p><b>Student Zingt</b>: </p>
