@@ -4,7 +4,7 @@
       <div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
-      <form class="w-full p-4 bg-yellow-50 shadow-lg flex flex-col md:grid md:grid-cols-2 mt-4 gap-2" @submit.prevent="handleSubmit">
+      <form class="w-full p-4 bg-yellow-50 shadow-lg flex flex-col md:grid md:grid-cols-2 mt-8 gap-2" @submit.prevent="handleSubmit">
         <div class="form-group">
           <label for="name">Naam (kan ook anoniem)</label>
           <input

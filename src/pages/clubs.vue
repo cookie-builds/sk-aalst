@@ -27,6 +27,7 @@
 
 <script lang="ts" setup>
 import SectionComponent from '../components/section/index.vue';
+import { preloadImages } from '../utils/helper';
 
 const clubs = [
   {
@@ -57,8 +58,6 @@ const clubs = [
     website: 'https://www.mercurius-aalst.be',
   },
 ]
+
+await preloadImages(clubs.map(v => `/assets/${v.logo}`));
 </script>
-
-<style>
-
-</style>

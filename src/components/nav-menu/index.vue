@@ -43,6 +43,7 @@
 import { ref, computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { Bars3Icon } from '@heroicons/vue/16/solid';
+import { preloadImages } from '../../utils/helper';
 
 const route = useRoute();
 
@@ -53,10 +54,7 @@ const menuItems = [
   { url: '/contact', name: 'Contact' },
 ];
 
-const active = computed(() => {
-  return menuItems.find((v) => v.url === route.path)?.url;
-});
-
+const active = computed(() => menuItems.find((v) => v.url === route.path)?.url);
 const isMobileMenuOpen = ref(false);
 
 watch(
@@ -66,6 +64,8 @@ watch(
     window.scrollTo(0, 0); // Scroll to the top of the page
   }
 );
+
+await preloadImages(['/assets/sk-logo.svg'])
 </script>
 
 <style scoped>

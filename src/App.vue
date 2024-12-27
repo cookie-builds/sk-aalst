@@ -1,11 +1,13 @@
 <template>
-  <div class="page min-h-screen flex flex-col">
-    <nav-menu />
-    <div id="content" class="mt-20 md:mt-0 flex-1">
-      <router-view />
+  <suspense>
+    <div class="page min-h-screen flex flex-col">
+      <nav-menu />
+      <div id="content" class="mt-20 md:mt-0 flex-1">
+        <router-view />
+      </div>
+      <footer-component />
     </div>
-    <footer-component />
-  </div>
+  </suspense>
 </template>
 
 <script setup lang="ts">

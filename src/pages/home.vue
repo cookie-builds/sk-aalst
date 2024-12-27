@@ -13,7 +13,7 @@
       <div class="w-fit flex flex-col gap-2 items-center relative z-10 lg:text-white" v-for="info of contactInfo">
         <img :src="`/assets/${info.img}`" class="h-80 w-80 rounded-full object-cover" />
         <div class="flex flex-col justify-center w-fit text-center">
-          <div class="font-bold text-2xl">{{ info.club }}</div>
+          <div class="font-extrabold text-2xl">{{ info.club }}</div>
           <div>{{ info.name }}</div>
           <div>Lid bij {{ info.memberOf }}</div>
           <div><a class="underline underline-offset-4" :href="`mailto:${info.mail}`">Mail</a></div>
@@ -28,8 +28,10 @@
     <p><b>Student Zingt</b>: </p>
   </section-component>
 </template>
+
 <script setup lang="ts">
 import SectionComponent from '../components/section/index.vue';
+import { preloadImages } from '../utils/helper';
 
 const contactInfo = [
   { img: 'wout.jpg', club: 'A Gogo', name: 'Wout Dullaerts', memberOf: 'Caepa Vestigia', mail: 'wout.dullaerts@gmail.com' },
@@ -37,4 +39,10 @@ const contactInfo = [
   { img: 'nick.jpg', club: 'Lorem Ipsum', name: 'Nick Van der Meersche', memberOf: 'Caepa Vestigia', mail: 'nickvandermeersche.nvbm@gmail.com' },
   { img: 'mitch.jpg', club: 'Mercurius', name: 'Mitchell Goossens', memberOf: 'Lorem Ipsum', mail: 'mitchell_47@live.com' },
 ]
+
+await preloadImages([
+  '/assets/banner.jpg',
+  ...contactInfo.map(v => `/assets/${v.img}`)
+])
+
 </script>
