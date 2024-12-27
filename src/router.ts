@@ -4,6 +4,7 @@ import Clubs from './pages/clubs.vue'
 import Praesidium from './pages/praesidium.vue'
 import Contact from './pages/contact.vue'
 import Sponsors from './pages/sponsors.vue'
+import Clublied from './pages/clublied.vue'
 
 
 const routes: RouteRecordRaw[] = [
@@ -16,6 +17,11 @@ const routes: RouteRecordRaw[] = [
     name: 'praesidium',
     path: '/praesidium',
     component: Praesidium,
+  },
+  {
+    name: 'clublied',
+    path: '/clublied',
+    component: Clublied,
   },
   { 
     name: 'clubs',

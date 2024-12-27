@@ -35,7 +35,7 @@ import { preloadImages } from '../utils/helper';
 
 const contactInfo = [
   { img: 'wout.jpg', club: 'A Gogo', name: 'Wout Dullaerts', memberOf: 'Caepa Vestigia', mail: 'wout.dullaerts@gmail.com' },
-  { img: 'lynn.jpg', club: 'Caepa Vestigia', name: 'Lynn Capelleman', memberOf: 'Lorem Ipsum', mail: 'lynn.capelleman@hotmail.com' },
+  { img: 'brent.jpg', club: 'Caepa Vestigia', name: 'Brent Van Huylenbroeck', memberOf: 'Lorem Ipsum', mail: 'brent.vanhuylenbroeck@hotmail.com' },
   { img: 'nick.jpg', club: 'Lorem Ipsum', name: 'Nick Van der Meersche', memberOf: 'Caepa Vestigia', mail: 'nickvandermeersche.nvbm@gmail.com' },
   { img: 'mitch.jpg', club: 'Mercurius', name: 'Mitchell Goossens', memberOf: 'Lorem Ipsum', mail: 'mitchell_47@live.com' },
 ]
