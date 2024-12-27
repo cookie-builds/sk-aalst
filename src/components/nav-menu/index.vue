@@ -1,16 +1,20 @@
 <template>
   <nav class="flex justify-center items-center bg-white text-blue-950 h-20 md:h-24 w-full shadow-md fixed md:relative z-20">
     <!-- Desktop Menu -->
-    <ul class="hidden md:flex justify-center items-center gap-4">
-      <li v-for="mi in menuItems.slice(0, 3)" :key="mi.url">
-        <router-link class="desktop py-4" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
-      </li>
+    <ul class="hidden md:flex justify-center items-center gap-4 w-full">
+      <div class="flex flex-1 gap-4 justify-end">
+        <li v-for="mi in menuItems.slice(0, 3)" :key="mi.url">
+          <router-link class="desktop py-4" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
+        </li>
+      </div>
       <router-link class="desktop no-after m-auto" to="/">
         <img class="h-20 w-20 mx-4" src="/assets/sk-logo.svg" />
       </router-link>
-      <li v-for="mi in menuItems.slice(3, 5)" :key="mi.url">
-        <router-link class="desktop py-4" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
-      </li>
+      <div class="flex flex-1 gap-4">
+        <li v-for="mi in menuItems.slice(3, 5)" :key="mi.url">
+          <router-link class="desktop py-4" :to="mi.url" :class="active === mi.url">{{ mi.name }}</router-link>
+        </li>
+      </div>
     </ul>
 
     <!-- Mobile Menu -->
