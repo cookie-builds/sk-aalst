@@ -6,7 +6,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
         <div class="flex flex-col md:flex-row gap-4 bg-yellow-50 shadow-md p-4" v-for="club of clubs">
-          <img :src="`public/assets/${club.logo}`" class="max-h-60 h-full md:max-h-none md:h-auto md:w-60 object-contain" />
+          <img :src="`/assets/${club.logo}`" class="max-h-60 h-full md:max-h-none md:h-auto md:w-60 object-contain" />
           <div class="flex flex-col align-top gap-2">
             <h2 class="font-extrabold text-xl">{{ club.name }}</h2>
             <p class="flex-1">{{ club.description }}</p>
