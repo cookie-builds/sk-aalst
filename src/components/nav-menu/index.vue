@@ -8,7 +8,7 @@
         </li>
       </div>
       <router-link class="desktop no-after m-auto" to="/">
-        <img class="h-20 w-20 mx-4" src="/assets/sk-logo.svg" />
+        <img class="h-20 w-20 mx-4" src="/assets/sk-logo.png" />
       </router-link>
       <div class="flex flex-1 gap-4">
         <li v-for="mi in menuItems.slice(3, 5)" :key="mi.url">
@@ -20,7 +20,7 @@
     <!-- Mobile Menu -->
     <div class="flex items-center justify-between md:hidden w-full px-4">
       <router-link to="">
-        <img src="/assets/sk-logo.svg" class="h-16 w-16" />
+        <img src="/assets/sk-logo.png" class="h-16 w-16" />
       </router-link>
       <Bars3Icon class="h-8 w-8 hover:cursor-pointer" @click="isMobileMenuOpen = !isMobileMenuOpen"/>
     </div>
@@ -70,7 +70,7 @@ watch(
   }
 );
 
-await preloadImages(['/assets/sk-logo.svg'])
+await preloadImages(['/assets/sk-logo.png'])
 </script>
 
 <style scoped>
