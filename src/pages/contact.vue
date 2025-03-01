@@ -137,7 +137,11 @@ const resetForm = () => {
   @apply text-red-500
 }
 
-input, textarea{
-  @apply min-h-10 p-2
+input, textarea {
+  @apply min-h-10 p-2 border border-yellow-500 rounded-md
+}
+
+label {
+  @apply font-bold
 }
 </style>
