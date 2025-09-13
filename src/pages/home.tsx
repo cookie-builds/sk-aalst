@@ -9,8 +9,8 @@ const contactInfo = [
 
 const Home = () => (
   <>
-  <div className="flex w-full max-h-[calc(100vh-6rem)] overflow-hidden">
-    <img className="w-full object-cover object-center" src="/assets/images/website/banner.jpg"  />
+  <div className="flex w-full overflow-hidden h-full md:h-[30rem]">
+    <img className="w-full object-cover object-center" src="/assets/images/website/banner-2.jpg"  />
   </div>
   <Section bgColor="bg-yellow-50" textColor="text-blue-950" title="SK Aalst" alignItems="items-start" big-title title-above>
     <p>SK Aalst is een voortzetting van het Studentenverbond Hoger Onderwiis Aalst - Katholiek Vlaams Hoogstudentenverbond', afgekort 'Shoa-KVHV'. Shoa is in academieiaar 2012-13 afgesplitst van KVHV en door de splitsing werd het verbond hervormd tot een konvent namelijk SK Aalst.</p><br />
