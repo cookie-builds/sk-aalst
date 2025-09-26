@@ -1,10 +1,10 @@
 import Section from "../components/section"
 
 const contactInfo = [
-  { img: 'wout.jpg', club: 'A Gogo', name: 'Wout Dullaerts', memberOf: 'Caepa Vestigia', mail: 'wout.dullaerts@gmail.com' },
-  { img: 'brent.jpg', club: 'Caepa Vestigia', name: 'Brent Van Huylenbroeck', memberOf: 'Lorem Ipsum', mail: 'brent.vanhuylenbroeck@hotmail.com' },
-  { img: 'nick.jpg', club: 'Lorem Ipsum', name: 'Nick Van der Meersche', memberOf: 'Caepa Vestigia', mail: 'nickvandermeersche.nvbm@gmail.com' },
-  { img: 'mitch.jpg', club: 'Mercurius', name: 'Mitchell Goossens', memberOf: 'Lorem Ipsum', mail: 'mitchell_47@live.com' },
+  { img: 'fleur.jpeg', club: 'Lorem Ipsum', name: 'Fleur Schietecat', memberOf: 'Mercurius Aalst', mail: 'fleurschietecat@gmail.com', phone: '0495 76 71 45' },
+  { img: 'lander.jpeg', club: 'Mercurius Aalst', name: 'Lander Strobbe', memberOf: 'Caepa Vestigia', mail: 'landerstrobbe@gmail.com', phone: '0497 12 70 98' },
+  { img: 'mitch.jpg', club: 'Caepa Vestigia', name: 'Nick Van der Meersche', memberOf: 'Lorem Ipsum', mail: 'mitchell_47@live.com', phone: '0470 36 11 85' },
+  { img: 'brent.jpg', club: 'SC A Gogo', name: 'Brent Van Huylenbroeck', memberOf: 'Lorem Ipsum', mail: 'brent.vanhuylenbroeck@hotmail.com' },
 ]
 
 const Home = () => (
@@ -21,7 +21,7 @@ const Home = () => (
     <p>Verbondspraeses Wim Daelman mocht het Aalsterse verbond de 21ste eeuw binnenlozen en werd later opgevolgd door ziin medemercuriaan Frederik Van Hecke. Voor 2002-'03 kwam Tini Verdickt aan de macht als eerste vrouweliike verbondpraeses. In de volgende iaren van het 1ste decennia verliep de opvolging zonder enige incidenten en bleef het verbond verder bouwen aan de studentikoziteit in Aalst. Voor het academieiaar 2010-'11 werd de fakkel overgedragen aan Robin De Smet. Hij is de eerste van studentenclub Nursaia die praeses van het Aalsterse verbond werd.</p><br />
     <p>2012-'13 werd een jaar van verandering voor Shoa-KVHV. Praeses Michaël de Korte samen met Ina Van Den Bremt en Dimitri Stevens hervormde het verbond tot SK Aalst en KVHV splitste zich af en werd een afzonderliike studentenvereniging. Het doel van SK Aalst als verbond bleef hetzelfde, maar er werd wel een nieuw verbondslied gemaakt en nieuwe statuten geschreven.</p><br />
   </Section>
-  <Section bgColor="bg-white" textColor="text-blue-950" title="Vertrouwens&shy;persoon voor elke club" alignItems="items-end">
+  <Section bgColor="bg-white" textColor="text-blue-950" title="Vertrouwens&shy;persoon voor elke club" alignItems="items-start">
     <p>
       Een vertrouwenspersoon biedt een luisterend oor en advies aan clubleden die te maken hebben met ongewenst gedrag, zoals pesten, intimidatie of discriminatie binnen clubverband. Ze helpen bij het verhelderen van de situatie en bieden ondersteuning bij het vinden van oplossingen. Daarnaast dragen ze bij aan het creeren van een veilige en respectvolle werkomgeving door bewustwording en preventie te bevorderen. Deze vertrouwenspersonen zijn onafhankelijk van de club om belangenvermenging te voorkomen. Hieronder een overzicht van de bevoegde vertrouwenspersonen per club.
     </p>
@@ -33,7 +33,8 @@ const Home = () => (
             <div className="font-extrabold text-2xl">{info.club}</div>
             <div>{info.name}</div>
             <div>Lid bij {info.memberOf}</div>
-            <div><a className="underline underline-offset-4" href={`mailto:${info.mail}`}>Mail</a></div>
+            <div><a href={`mailto:${info.mail}`}><u>Email</u></a></div>
+            <div><a href={`tel:${info.phone}`}><u>Telefoon</u></a></div>
           </div>
         </div>
       ))}
@@ -60,15 +61,7 @@ const Home = () => (
       Op deze manier draagt het Seniorenkonvent bij aan het versterken en bevorderen van het clubleven.
     </p>
   </Section>
-  <Section bgColor="bg-yellow-50" textColor="text-blue-950" title="Wat willen wij nog doen?" alignItems="items-end">
-    <h2 className="font-bold text-xl">SK inhuren</h2>
-    <p>
-      Om zowel de werking van jullie club als die van het SK te bevorderen,
-      kan je leden van het SK inhuren voor een avond een cantusfunctie te komen invullen voor €20, 
-      hierbij heeft elke club twee jokers doorheen het jaar om een cantusfunctie gratis te laten invullen door een lid van het SK.
-      Verder kan je ons voor een schappelijk prijsje van €35 voor een hele avond inhuren op activiteiten zoals TD's en fuiven.
-      Het is natuurlijk niet de bedoeling ons in te huren om de rotte werkjes te geven die niemand anders wilt doen.
-    </p>
+  <Section bgColor="bg-yellow-50" textColor="text-blue-950" title="Wat willen wij nog doen?" alignItems="items-start">
     <h2 className="font-bold text-xl !mt-4">Verbroedering</h2>
     <p>
       Als Seniorenkonvent streven wij ernaar de verbroedering tussen de
