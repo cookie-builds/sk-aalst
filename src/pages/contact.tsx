@@ -55,14 +55,13 @@ const Contact = () => {
       }
 
       setIsSubmitting(true);
-
       try {
         // Optionally initialize
         const response = await emailjs.sendForm(
           VITE_EMAILJS_SERVICE_ID,
           VITE_EMAILJS_TEMPLATE_ID,
           formRef.current,
-          VITE_EMAILJS_PUBLIC_KEY,
+          { publicKey: VITE_EMAILJS_PUBLIC_KEY }
         );
         console.log('SUCCESS!', response.status, response.text);
 
@@ -94,7 +93,7 @@ const Contact = () => {
           <input
             type="text"
             id="name"
-            name="name"              // important: name attribute must match template variable
+            name="name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           />
@@ -106,7 +105,7 @@ const Contact = () => {
           <input
             type="email"
             id="email"
-            name="email"             // important: name attribute must match template variable
+            name="email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           />
@@ -117,7 +116,7 @@ const Contact = () => {
           <label htmlFor="message" className="font-bold">Bericht</label>
           <textarea
             id="message"
-            name="message"           // important: name attribute must match template variable
+            name="message"
             value={formData.message}
             className="!h-40 resize-y"
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
