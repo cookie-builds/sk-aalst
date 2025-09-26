@@ -8,9 +8,9 @@ const Contact = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
-    name: 'Test Jonathan',
-    email: 'jonathan.couck@weglow.world',
-    message: 'Dit is een testbericht.',
+    name: '',
+    email: '',
+    message: '',
   });
   const [errors, setErrors] = useState<{
     name: string | null;
