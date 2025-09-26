@@ -3,7 +3,8 @@ import emailjs from 'emailjs-com';
 import Section from "../components/section"
 
 const Contact = () => {
-  const { VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID } = (import.meta as any).env;
+  const { VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_USER_ID } = (import.meta as any).env;
+  console.log(VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_USER_ID);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
