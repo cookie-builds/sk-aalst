@@ -2,6 +2,14 @@ import Section from "../components/section"
 
 export const praesidiumMembers = [
   {
+    name: "Jarno ’Cremer’ De Cremer",
+    function: 'Praeses',
+    img: 'cremer.jpeg',
+    description: null,
+    club: 'Mercurius Aalst',
+    doopjaar: '2021',
+  },
+  {
     name: "Brent ‘Boxer’ Van Huylenbroeck",
     function: 'Vice-Praeses',
     img: 'brent.jpg',
@@ -14,7 +22,7 @@ export const praesidiumMembers = [
     function: 'Ab-actis',
     img: 'fleur.jpeg',
     description: 'Het leven is geven en nemen. Soms neem ik teveel en dan geef ik over.',
-    club: 'Mercurius',
+    club: 'Mercurius Aalst',
     doopjaar: '2019',
   },
   {
@@ -35,9 +43,9 @@ export const praesidiumMembers = [
   },
   {
     name: "Amory Gyssens",
-    function: 'Penningmeester',
+    function: 'Sport',
     img: 'amory.jpeg',
-    description: "Ja men kinjer'n",
+    description: "Ja men kinjer’n",
     club: 'Lorem Ipsum',
     doopjaar: '2022',
   },
