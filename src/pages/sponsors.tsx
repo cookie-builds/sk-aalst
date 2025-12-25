@@ -16,13 +16,13 @@ const sponsors = [
   {
     img: 'ravazjol.jpg',
     name: 'Ravazjol',
-    type: 'Bakkerij',
+    type: 'Café',
     address: 'Rozemarijnstraat 9, 9300 Aalst',
   },
   {
     img: 'malfroidt.png',
     name: 'Malfroidt',
-    type: 'Bakkerij',
+    type: 'drankencentrale',
     address: 'Oude Kaai 34, 9400 Ninove',
   },
   {

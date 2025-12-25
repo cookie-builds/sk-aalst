@@ -40,7 +40,7 @@ const clubs = [
     logo: 'mercurius.png',
     description: [
       'Het in 1948 ontstane Mercurius is de oudste nog bestaande studentenclub van Aalst. In de pas opgerichte Rijkshogere Handelsschool werd door toenmalig directeur Reychler Studentenbond Mercurius boven de doopvont gehouden. Er werd onder andere toneel gespeeld en een bibliotheek beheerd. Er was ook het studentenblad Kwik, het huidige Mercuriosity.',
-      "Het is duidelijk dat er sindsdien veel veranderd is. In de vijftigjarige geschiedenis heeft de club tweemaal een onderbreking gekend van enkele jaren. De laatste heroprichting dateert van 1986 toen Peter Van Accolyen de club opnieuw leven in blies. Lang was het Kastanjehof het clublokaal. In 'den Hof' stonden Yvette en Winny achter den toog. Tegenwoordig kan je in onze clublokalen terecht bij Luc (De Klok) of Walter (Den Heiligen Gheest).",
+      "Het is duidelijk dat er sindsdien veel veranderd is. In de zevenenzeventig jarige geschiedenis heeft de club tweemaal een onderbreking gekend van enkele jaren. De laatste heroprichting dateert van 1986 toen Peter Van Accolyen de club opnieuw leven in blies. Lang was het Kastanjehof het clublokaal. In 'den Hof' stonden Yvette en Winny achter den toog. Tegenwoordig kan je in onze clubcafé de Zeppelin terecht bij Hans en Katleen",
       'Mercurius was de Romeinse god van de handelaren (ook wel van de dieven en bedriegers). Zijn Griekse tegenhanger was Hermes, net zoals nu de Gentse tegenhanger van Mercurius heet. Op het schild kan je behalve het monogram ook de staf van Mercurius zien, de caduceus. Deze toont een palmtak met twee verstrengelde slangen.',
     ],
     facebook: 'https://www.facebook.com/groups/26262717221',
@@ -53,7 +53,7 @@ const Clubs = () => (
     <Section title="Clubs" bg-color="bg-white" text-color="text-blue-950" align-items="items-start">
       <div className="flex flex-col gap-8 min-h-40">
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Aalst is een echte studentenstad, met verschillende studentenclubs die elk hun eigen karakter en sfeer hebben. Hieronder vind je een overzicht van de actieve studentenclubs in Aalst. Elke club heeft zijn eigen unieke tradities, evenementen en activiteiten, waardoor er voor elke student wel een passende club te vinden is.
         </div>
         {clubs.map((club) => (
           <div className="flex flex-col md:flex-row !gap-4 bg-yellow-50 shadow-lg !p-4">

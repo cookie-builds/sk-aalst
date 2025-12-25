@@ -2,7 +2,7 @@ import Section from "../components/section"
 
 const contactInfo = [
   { img: 'fleur.jpeg', club: 'Lorem Ipsum', name: 'Fleur Schietecat', memberOf: 'Mercurius Aalst', mail: 'fleurschietecat@gmail.com', phone: '0495 76 71 45' },
-  { img: 'lander.jpeg', club: 'Mercurius Aalst', name: 'Lander Strobbe', memberOf: 'Caepa Vestigia', mail: 'landerstrobbe@gmail.com', phone: '0497 12 70 98' },
+  { img: 'amory.jpeg', club: 'Mercurius Aalst', name: 'Amory Gyssens', memberOf: 'Lorem Ipsum', mail: 'amorygyssens@gmail.com', phone: '0477 56 51 85' },
   { img: 'mitch.jpg', club: 'Caepa Vestigia', name: 'Nick Van der Meersche', memberOf: 'Lorem Ipsum', mail: 'mitchell_47@live.com', phone: '0470 36 11 85' },
   { img: 'brent.jpg', club: 'SC A Gogo', name: 'Brent Van Huylenbroeck', memberOf: 'Lorem Ipsum', mail: 'brent.vanhuylenbroeck@hotmail.com' },
 ]
