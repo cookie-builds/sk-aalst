@@ -81,7 +81,7 @@ const Contact = () => {
     <Section title="Contact" bgColor="bg-white" textColor="text-blue-950" alignItems="items-start">
       <div>
         {/* your intro text */}
-        Lorem ipsum dolor sit amet...
+        Mocht je met vragen zitten, staat heel ons praesidium te springen om je te helpen! Je kan ons bereiken via onderstaand formulier. Dit kan maar hoeft niet anoniem te gebeuren. Wanneer je echter vragen hebt waar je een antwoord op wenst, laat dan zeker je e-mailadres achter zodat we je kunnen contacteren.
       </div>
       <form
         ref={formRef}

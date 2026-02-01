@@ -3,7 +3,7 @@ import Section from "../components/section"
 export const praesidiumMembers = [
   {
     name: "Jarno ’Cremer’ De Cremer",
-    function: 'Praeses',
+    function: 'Senior seniorum',
     img: 'cremer.jpeg',
     description: null,
     club: 'Mercurius Aalst',
@@ -34,12 +34,12 @@ export const praesidiumMembers = [
     doopjaar: '2021',
   },
   {
-    name: "Lander Strobbe",
+    name: "Ilke Kestemont",
     function: 'Cultuur',
-    img: 'lander.jpeg',
-    description: 'Attitude is a little thing that makes a big difference.',
-    club: 'Caepa Vestigia',
-    doopjaar: '2020',
+    img: 'Ilke.jpg',
+    description: 'optimist tot in de kist!',
+    club: 'Mercurius Aalst',
+    doopjaar: '2018',
   },
   {
     name: "Amory Gyssens",
