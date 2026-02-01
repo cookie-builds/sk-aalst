@@ -64,7 +64,7 @@ const Praesidium = () => (
     <div className="w-full flex flex-col !mt-8 gap-4">
       {praesidiumMembers.map(pr => (
         <div key={pr.name} className="flex flex-col md:flex-row even:md:flex-row-reverse bg-yellow-50 shadow-lg">
-          <img src={`/assets/images/praesidium/${pr.img}`} className="max-h-80 md:max-h-60 md:max-w-60 h-full w-full object-cover" />
+          <img src={`/assets/images/praesidium/${pr.img}`} className="aspect-square max-h-80 md:max-h-60 md:max-w-60 h-full w-full object-cover" />
           <div className="flex flex-col flex-1 !p-4 !gap-2">
             <h2 className="font-bold text-lg">{pr.name}</h2>
             <span><i>{pr.function}</i></span>
