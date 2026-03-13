@@ -8,10 +8,10 @@ const sponsors = [
     address: 'Kapellekensbaan 10, 9320 Aalst',
   },
   {
-    img: 'ponnet.jpg',
-    name: 'Ponnet',
-    type: 'Bakkerij',
-    address: 'Molenstraat 26, 9300 Aalst',
+    img: 'tout-bien.jpg',
+    name: 'Tout-Bien',
+    type: 'The belgianest of beers',
+    address: 'Moutstraat 64 Gent 9000',
   },
   {
     img: 'ravazjol.jpg',
